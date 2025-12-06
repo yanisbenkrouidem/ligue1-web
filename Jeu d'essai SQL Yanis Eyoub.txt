@@ -1,0 +1,34 @@
+Jeu d'essai SQL du projet Ligue 1 Mcdonalds : 
+Yanis Benkrouidem
+Eyoub Belkhiri
+
+Nous l'avons simplifié pour une lecture optimal
+
+
+
+INSERT INTO club (idclub, nom, fondation, president, entraineur) VALUES
+(1, 'Paris Saint-Germain', 1970, 'Nasser Al-Khelaïfi', 'Luis Enrique'),
+(2, 'Olympique de Marseille', 1899, 'Pablo Longoria', 'Jean-Louis Gasset'),
+(3, 'Olympique Lyonnais', 1950, 'John Textor', 'Pierre Sage'),
+(4, 'AS Monaco', 1919, 'Dmitry Rybolovlev', 'Adi Hütter');
+
+INSERT INTO journee (idjournee, libelle) VALUES
+(1, 'Journée 1'),
+(2, 'Journée 2'),
+(3, 'Journée 3');
+
+INSERT INTO rencontre (idjournee, numrenc, daterenc, heurerenc, idclubdom, idclubext, scoreclubdom, scoreclubext) VALUES
+(1, 1, '2024-08-10', '20:45:00', 1, 2, 2, 1),
+(1, 2, '2024-08-11', '17:00:00', 3, 4, 1, 1),
+(2, 1, '2024-08-17', '20:45:00', 2, 3, 0, 2),
+(2, 2, '2024-08-18', '17:00:00', 4, 1, 1, 3);
+
+INSERT INTO utilisateur (idutil, pseudoutil, mdputil) VALUES
+(1, 'admin', 'motdepasse1'),
+(2, 'manager', 'motdepasse2'),
+(3, 'user1', 'motdepasse3');
+
+INSERT INTO commentaire (idcom, datecom, libelle, idjournee, numrenc, idutil) VALUES
+(1, '2024-08-10', 'Match intense entre PSG et OM', 1, 1, 1),
+(2, '2024-08-11', 'Match nul équilibré', 1, 2, 2),
+(3, '2024-08-17', 'Lyon impressionnant', 2, 1, 3);
