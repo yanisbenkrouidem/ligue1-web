@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: white;
+}
+
+.navbar {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #007BFF;
+}
+
+.dashboard-content {
+    padding: 2rem;
+}
+
+.welcome-section h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    color: #007BFF;
+    margin-bottom: 0.5rem;
+}
+
+.card a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+    transition: color 0.3s;
+}
+
+.card a:hover {
+    color: #007BFF;
+}
